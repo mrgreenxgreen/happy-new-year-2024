@@ -1,0 +1,115 @@
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h1{
+    font-family:Arial;
+    
+}
+
+#greeting-container{
+   
+    /* animation: slide-up 5s 2; */
+    position:relative;
+    font-size:50px;
+    display:flex;
+    gap: 20px;
+    
+}
+#year{
+    font-size:70px;
+}
+
+
+@keyframes slide-up1 {
+    0% {
+        right:500px;
+        bottom:0px;
+        filter:blur(15px)
+    }
+    25%  { filter:blur(10px) }
+    50%  {  filter:blur(2px);right:0px;}
+    75%  { filterblur(0) }
+    100% { }
+  
+  }
+  
+@keyframes slide-up2 {
+    0% {
+        
+        bottom:500px;
+        filter:blur(15px)
+    }
+    25%  { filter:blur(10px) }
+    50%  {  filter:blur(2px);bottom:0px; }
+    75%  { filterblur(0) }
+    100% { }
+  
+  }
+  
+@keyframes slide-up3 {
+    0% {
+        left:400px;
+        bottom:0px;
+        filter:blur(15px)
+    }
+    25%  { filter:blur(10px) }
+    50%  {  filter:blur(2px);left:0px; }
+    75%  { filterblur(0); }
+    100% { }
+  
+  }
+  @keyframes slide-up4 {
+    0% {
+        top:400px;
+       
+        filter:blur(15px)
+    }
+    25%  { filter:blur(10px); }
+    50%  {  filter:blur(2px);top:0px;font-size:font-size:80px; }
+    85%  { filterblur(0);font-size:500px; }
+    100% {  }
+  
+  }
+
+  .animated-text1 {
+    animation: slide-up1 5s ease-in-out; 
+    animation-fill-mode: forwards; 
+
+    position:relative;
+  }
+  .animated-text2 {
+    animation: slide-up2 5s ease-in-out; /* Adjust duration and timing as needed */
+    animation-fill-mode: forwards; /* Keep text in final position after animation */
+    position:relative;
+  }
+
+  .animated-text3 {
+    animation: slide-up3 5s ease-in-out; /* Adjust duration and timing as needed */
+    animation-fill-mode: forwards; /* Keep text in final position after animation */
+    position:relative;
+  }
+
+  .animated-text4 {
+    animation: slide-up4 7s ease-in-out; /* Adjust duration and timing as needed */
+    animation-fill-mode: forwards; /* Keep text in final position after animation */
+    position:relative;
+  }
+  
